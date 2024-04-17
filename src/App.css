@@ -50,21 +50,23 @@
 
 /* Center the new game button */
 .button-container {
-  margin-top: 20px;
-  position: relative;
+  margin-top: 40px;
   display: flex;
+  align-items: center;
   justify-content: center;
+  width: 610px;
+  position: relative;
 }
 
 /* Fix it in place */
 .button {
   padding: 10px 15px;
   background-image: url("./assets/grid.png");
+  background-color: #8e6fff;
   border: none;
   cursor: pointer;
   border-radius: 10px;
-  font-size: 2rem;
-  width: 220px;
+  font-size: 2.5rem;
   position: absolute;
 }
 
@@ -72,5 +74,28 @@
 @media only screen and (max-width: 800px) {
   .board {
     grid-template: repeat(3, 100px) / repeat(3, 100px);
+  }
+
+  .button-container {
+    width: 310px;
+  }
+
+  .button {
+    font-size: 1.25rem;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 801px) and (max-width: 1200px) {
+  .board {
+    grid-template: repeat(3, 150px) / repeat(3, 150px);
+  }
+
+  .button-container {
+    width: 455px;
+  }
+
+  .button {
+    font-size: 2rem;
   }
 }
