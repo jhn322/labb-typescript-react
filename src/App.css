@@ -4,7 +4,7 @@
   gap: 5px;
 }
 
-.cell {
+.square {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,6 +13,6 @@
   cursor: pointer;
 }
 
-.cell:hover {
+.square:hover {
   background-color: #d3d3d3;
 }
