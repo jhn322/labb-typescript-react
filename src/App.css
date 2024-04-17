@@ -42,7 +42,8 @@
   cursor: pointer;
 }
 
-.square:hover {
+.square:hover,
+.button:hover {
   background-color: #6fff76;
   color: #8e6fff;
 }
@@ -64,15 +65,7 @@
   border-radius: 10px;
   font-size: 2rem;
   width: 220px;
-  transition: width 0.3s;
   position: absolute;
-}
-
-.button:hover {
-  background-color: #6fff76;
-  color: #8e6fff;
-  width: 220px;
-  font-size: 2rem;
 }
 
 /* Mobile */

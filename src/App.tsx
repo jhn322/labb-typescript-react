@@ -10,9 +10,9 @@ const App = () => {
   const [gameState, setGameState] = useState<GameState[]>(
     Array(9).fill({ player: null }) // Initialize the game with 9 squares
   );
-  const [currentPlayer, setCurrentPlayer] = useState<string>("X"); // Set the current player as X
-  const [gameOver, setGameOver] = useState<boolean>(false); // Game over as false to begin
-  const [headline, setHeadline] = useState<string>("Tic Tac Toe"); // Headline by default
+  const [currentPlayer, setCurrentPlayer] = useState("X"); // Set the current player as X
+  const [gameOver, setGameOver] = useState(false); // Game over as false to begin
+  const [headline, setHeadline] = useState("Tic Tac Toe"); // Headline by default
 
   // Array defining all possible win conditions
   const winConditions: number[][] = [
